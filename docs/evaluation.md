@@ -168,7 +168,7 @@ equally correct.
 Even when `ACTION` is not in `reward_basis`, the `ActionEvaluator` can
 still run for diagnostic purposes:
 
-- The CLI runner uses `EvaluationType.ALL_WITH_NL_ASSERTIONS` by default,
+- The CLI runner uses `EvaluationType.ALL` by default,
   so `action_checks` are populated on `RewardInfo` for every simulation,
   and `partial_action_reward` summarizes how many of the listed reference
   actions were matched. These are surfaced by `tau2 view` (look for
