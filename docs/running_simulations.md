@@ -261,7 +261,7 @@ result = run_simulation(orchestrator)
 ### Layer 3: Batch Execution
 
 - **`run_domain(config)`** -- Run all tasks for a domain from a `RunConfig`. Handles task loading, filtering, save paths, metrics.
-- **`run_tasks(config, tasks, *, save_path, save_dir, evaluation_type=EvaluationType.ALL_WITH_NL_ASSERTIONS, console_display)`** -- Run a list of tasks with concurrency, checkpointing, and retries. Note: defaults to `ALL_WITH_NL_ASSERTIONS` (unlike `run_simulation` which defaults to `ALL`).
+- **`run_tasks(config, tasks, *, save_path, save_dir, evaluation_type=EvaluationType.ALL, console_display)`** -- Run a list of tasks with concurrency, checkpointing, and retries. Defaults to `ALL`, the same as `run_simulation`.
 - **`run_single_task(config, task, *, seed, evaluation_type, save_dir, ...)`** -- Run one task with logging and optional side effects (auto-review, audio saving).
 
 ### Helpers
